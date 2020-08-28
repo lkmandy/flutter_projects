@@ -20,7 +20,7 @@ class Todo {
     this.date = o['date'];
   }
 
-  // getters
+  // getters using fat arrow syntax
   int get id => _id;
   String get title => _title;
   String get description => _description;

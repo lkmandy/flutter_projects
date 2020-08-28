@@ -5,6 +5,7 @@ import 'package:sqflite/sqflite.dart';
 import 'package:todo/model/todo.dart';
 
 class DbHelper {
+  //  Dart's factory constructor feature
   static final DbHelper _dbHelper = DbHelper._internal();
   // name of table
   String tblTodo = 'todo';
@@ -90,3 +91,26 @@ class DbHelper {
     return result;
   }
 }
+
+/*
+* Implementing a singleton: standard format
+class MyClass {
+  static final MyClass _singleton = new MyClass._internal();
+
+  factory MyClass() {
+    return _singleton;
+  }
+
+  MyClass._internal() {
+    ... // initialization logic here
+  }
+
+  ... // rest of the class
+}
+
+// consuming code
+MyClass myObj = new MyClass(); // get back the singleton
+...
+// another piece of consuming code
+MyClass myObj = new MyClass(); // still getting back the singleton
+*/
