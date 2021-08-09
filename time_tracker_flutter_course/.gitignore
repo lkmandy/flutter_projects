@@ -74,7 +74,8 @@ build/
 
 # Files for the ART/Dalvik VM
 *.dex
-*.gitattributes
+*../.gitattributes
+*.flutter-plugins-dependencies
 
 # Java class files
 *.class
